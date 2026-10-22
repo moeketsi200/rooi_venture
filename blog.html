@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rooi Venture Blog - In-depth hiking guides, hidden gems, road trip itineraries, and packing lists for the Garden Route and George.">
+  <title>Blog & Trail Guides | Rooi Venture</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glass Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="images/logo.png" alt="Rooi Venture Logo" class="logo">
+        </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog & Trails</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="blog-hero">
+    <div class="container">
+      <span class="hero-badge">📚 Explorer Guides & Articles</span>
+      <h1 class="hero-title" style="margin-top: 1rem;">Garden Route Adventure Journal</h1>
+      <p class="hero-description" style="max-width: 650px; margin: 0 auto;">
+        Expert trail reports, local advice, scenic road trips, and preparation tips curated by tourism explorer Moeketsi Motloung.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Blog Area -->
+  <main class="container">
+
+    <!-- Category Filters -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-category="all">All Guides</button>
+      <button class="filter-btn" data-category="hiking">🥾 Hiking Trails</button>
+      <button class="filter-btn" data-category="attractions">⭐ Top Attractions</button>
+      <button class="filter-btn" data-category="daytrips">🚗 Day Trips</button>
+      <button class="filter-btn" data-category="roadtrips">🗺️ Road Trips</button>
+      <button class="filter-btn" data-category="hidden-gems">🔍 Secret Spots</button>
+      <button class="filter-btn" data-category="gear">🎒 Packing & Tips</button>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid" id="blogGrid">
+
+      <!-- Post 1: Top 10 Hiking Trails -->
+      <article class="blog-post-card" data-category="hiking">
+        <div class="post-thumb">
+          <img src="images/outeniqua-trail.jpg" alt="Hiking trails in George">
+          <span class="post-category-tag">Hiking Trails</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/top-hiking-trails.html">Top 10 Hiking Trails in and Around George</a>
+          </h2>
+          <p class="post-excerpt">
+            From the demanding ascent of Cradock Peak to the shaded paths of Witfontein Reserve, explore the top hiking experiences around George.
+          </p>
+          <div class="post-actions">
+            <a href="blog/top-hiking-trails.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/top-hiking-trails.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/top-hiking-trails.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 2: 10 Must-Visit Attractions -->
+      <article class="blog-post-card" data-category="attractions">
+        <div class="post-thumb">
+          <img src="images/kaaimans-river.jpg" alt="Attractions in George">
+          <span class="post-category-tag">Attractions</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/must-visit-attractions.html">10 Must-Visit Attractions in George: A Local's Guide</a>
+          </h2>
+          <p class="post-excerpt">
+            Uncover the premier highlights of George, including strawberry picking at Redberry Farm, Outeniqua Transport Museum, and coastal lookouts.
+          </p>
+          <div class="post-actions">
+            <a href="blog/must-visit-attractions.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/must-visit-attractions.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/must-visit-attractions.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 3: Day Trips from George -->
+      <article class="blog-post-card" data-category="daytrips">
+        <div class="post-thumb">
+          <img src="images/knysna-heads.jpg" alt="Knysna Heads Day Trip">
+          <span class="post-category-tag">Day Trips</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/garden-route-trips.html">Exploring the Garden Route: Best Day Trips from George</a>
+          </h2>
+          <p class="post-excerpt">
+            Easy excursions within 1 to 2 hours of George: canoe the Wilderness waterways, admire the Knysna Heads, and walk Tsitsikamma suspension bridges.
+          </p>
+          <div class="post-actions">
+            <a href="blog/garden-route-trips.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/garden-route-trips.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/garden-route-trips.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 4: Road Trip Itinerary -->
+      <article class="blog-post-card" data-category="roadtrips">
+        <div class="post-thumb">
+          <img src="images/seven-passes-road.jpg" alt="Garden Route Road Trip Itinerary">
+          <span class="post-category-tag">Road Trips</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/road-trip-itinerary.html">Ultimate Garden Route Road Trip Itinerary</a>
+          </h2>
+          <p class="post-excerpt">
+            A step-by-step multi-day driving guide connecting Mossel Bay, George, Wilderness, Knysna, Plettenberg Bay, and Storms River.
+          </p>
+          <div class="post-actions">
+            <a href="blog/road-trip-itinerary.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/road-trip-itinerary.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/road-trip-itinerary.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 5: Secret George Hidden Spots -->
+      <article class="blog-post-card" data-category="hidden-gems">
+        <div class="post-thumb">
+          <img src="images/herolds-bay.jpg" alt="Secret George lookout">
+          <span class="post-category-tag">Secret Spots</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/secret-george.html">Secret George: Hidden Spots Known Only to Locals</a>
+          </h2>
+          <p class="post-excerpt">
+            Escape the tourist crowds with off-the-beaten-path trails, tranquil tidal pools at Herold’s Bay, and historic mountain passes.
+          </p>
+          <div class="post-actions">
+            <a href="blog/secret-george.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/secret-george.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/secret-george.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 6: What to Pack -->
+      <article class="blog-post-card" data-category="gear">
+        <div class="post-thumb">
+          <img src="images/grbg.jpg" alt="Packing for Garden Route Hike">
+          <span class="post-category-tag">Packing & Gear</span>
+        </div>
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href="blog/what-to-pack.html">What to Pack for a Garden Route Adventure</a>
+          </h2>
+          <p class="post-excerpt">
+            Our checklist for Garden Route weather: quick-dry clothing, sun protection, hydration systems, hiking boots, and trail snacks.
+          </p>
+          <div class="post-actions">
+            <a href="blog/what-to-pack.html" class="card-link">Read Full Guide →</a>
+            <div class="share-links">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://rooiventure.co.za/blog/what-to-pack.html" target="_blank" rel="noopener">FB</a>
+              <a href="https://twitter.com/intent/tweet?url=https://rooiventure.co.za/blog/what-to-pack.html" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Moeketsi</a></li>
+            <li><a href="blog.html">Blog & Guides</a></li>
+            <li><a href="index.html#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="blog/top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="blog/top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="blog/top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="blog/garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/blog-filter.js"></script>
+</body>
+</html>

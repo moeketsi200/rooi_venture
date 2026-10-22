@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover George and the Garden Route with Rooi Venture. Uncover top hiking trails, coastal day trips, outdoor activities, and local travel guides.">
+  <title>Rooi Venture | Garden Route Adventure Hub & Hiking Trails</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+  <!-- Sticky Glass Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="images/logo.png" alt="Rooi Venture Logo" class="logo">
+        </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog & Trails</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        🌿 Garden Route & George, South Africa
+      </div>
+      <h1 class="hero-title">
+        Discover the Untamed Beauty of <span>George & Beyond</span>
+      </h1>
+      <p class="hero-description">
+        Experience breathtaking mountain summits, ancient indigenous forests, and golden coastal trails. Uncover hidden gems guided by passionate local tourism explorers.
+      </p>
+      <div class="hero-actions">
+        <a href="#featured-adventures" class="btn-primary">
+          Explore Adventures 🥾
+        </a>
+        <a href="#map-section" class="btn-secondary">
+          View Interactive Map 🗺️
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- Quick Stats Bar -->
+    <div class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">🌲</div>
+          <div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Curated Hiking Trails</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⭐</div>
+          <div>
+            <div class="stat-number">4.9 / 5</div>
+            <div class="stat-label">Explorer Satisfaction</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🌊</div>
+          <div>
+            <div class="stat-number">300 km</div>
+            <div class="stat-label">Scenic Garden Route</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">📍</div>
+          <div>
+            <div class="stat-number">George, SA</div>
+            <div class="stat-label">Adventure Epicenter</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Adventures Section -->
+    <section id="featured-adventures" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Hand-Picked Experiences</span>
+        <h2 class="section-title">Featured Trails & Escapes</h2>
+        <p class="section-desc">
+          From tranquil canopy strolls to summit scrambles above the clouds, explore our most popular hiking expeditions.
+        </p>
+      </div>
+
+      <div class="adventure-cards">
+        <!-- Card 1: Outeniqua Trail -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/outeniqua-trail.jpg" alt="Outeniqua Trail George">
+            <span class="card-badge">Mountain Trail</span>
+            <span class="card-rating-badge">★ 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span>⏱️ Multi-Day / Day Loop</span>
+              <span>•</span>
+              <span>💪 Moderate</span>
+            </div>
+            <h3 class="card-title">Outeniqua Mountain Trail</h3>
+            <p class="card-text">
+              Traverse through the heart of the Outeniqua Mountain Range, featuring panoramic vistas, fynbos flora, and misty valleys.
+            </p>
+            <div class="card-quote">
+              “One of the most scenic mountain trails in South Africa!” – Local Guide
+            </div>
+            <div class="card-footer">
+              <span class="card-link"><a href="blog/top-hiking-trails.html#outeniqua-trail">Read Trail Guide →</a></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Cradock Peak -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/cradock-peak.jpg" alt="Cradock Peak Hike">
+            <span class="card-badge">Summit Hike</span>
+            <span class="card-rating-badge">★ 4.8</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span>⏱️ 6 - 8 Hours</span>
+              <span>•</span>
+              <span>💪 Challenging</span>
+            </div>
+            <h3 class="card-title">Cradock Peak Climb</h3>
+            <p class="card-text">
+              Conquer George’s tallest peak (1,578m) for a 360-degree panorama of the Indian Ocean and the Klein Karoo semi-desert.
+            </p>
+            <div class="card-quote">
+              “Tough climb, but standing above the cloudline is unforgettable.”
+            </div>
+            <div class="card-footer">
+              <span class="card-link"><a href="blog/top-hiking-trails.html#cradock-peak">Read Trail Guide →</a></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Kaaimans River -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/kaaimans-river.jpg" alt="Kaaimans River Wilderness">
+            <span class="card-badge">River & Gorge</span>
+            <span class="card-rating-badge">★ 4.9</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span>⏱️ Half-Day</span>
+              <span>•</span>
+              <span>💪 Easy / Moderate</span>
+            </div>
+            <h3 class="card-title">Kaaimans Gorge & Waterfall</h3>
+            <p class="card-text">
+              Paddle up the dark amber waters of Kaaimans River to uncover a secluded waterfall hidden inside lush cliff walls.
+            </p>
+            <div class="card-quote">
+              “Kayaking up the gorge feels like stepping into Jurassic Park.”
+            </div>
+            <div class="card-footer">
+              <span class="card-link"><a href="blog/garden-route-trips.html">Explore Day Trips →</a></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Witfontein Forest Trail -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/witfontein-trail.jpg" alt="Witfontein Trail George">
+            <span class="card-badge">Forest Walk</span>
+            <span class="card-rating-badge">★ 4.7</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span>⏱️ 2 - 3 Hours</span>
+              <span>•</span>
+              <span>💪 Easy / Family</span>
+            </div>
+            <h3 class="card-title">Witfontein Forest Reserve</h3>
+            <p class="card-text">
+              A peaceful shaded route winding through ancient trees, pine groves, and crystal-clear mountain streams near George town.
+            </p>
+            <div class="card-quote">
+              “Perfect morning stroll for birdwatching and tranquil forest sounds.”
+            </div>
+            <div class="card-footer">
+              <span class="card-link"><a href="blog/top-hiking-trails.html#witfontein-trail">Read Trail Guide →</a></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section id="map-section" class="map-section">
+      <div class="section-header">
+        <span class="section-subtitle">Interactive Exploration</span>
+        <h2 class="section-title">Explore the Garden Route Map</h2>
+        <p class="section-desc">
+          Click on any marker to discover coordinates, trailheads, and iconic scenic destinations around George and the Southern Cape.
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <div id="map-container"></div>
+      </div>
+
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#0d9488;"></span> George Central Hub</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> Coastal Escapes</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> Forest & Mountain Peaks</div>
+      </div>
+    </section>
+
+    <!-- Gallery & Video Showcase -->
+    <section id="gallery" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Journey</span>
+        <h2 class="section-title">Moments from Around George</h2>
+        <p class="section-desc">
+          Immerse yourself in authentic views captured on the trail, from glowing coastal sunsets to lush forest canopies.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/photo1.jpg" alt="Outeniqua Mountain View">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Mountain Vista</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo2.jpg" alt="Lush Forest Trail">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Indigenous Forest Canopy</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo3.jpg" alt="Garden Route Coastal Sunset">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Indian Ocean Sunset</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo4.jpg" alt="Garden Route Wildlife & Flora">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Cape Floral Kingdom</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Showcase -->
+      <div class="video-showcase-grid">
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/ts0DWsKBKlo"
+              title="George in The Garden Route, South Africa"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>George – Hidden Gem of the Garden Route</h3>
+            <p>Take an aerial and on-the-ground tour of George's historic streets and surrounding peaks.</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/Shw0HEMuq_k"
+              title="Garden Route, South Africa - 10 Highlights"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>10 Garden Route Highlights</h3>
+            <p>Explore must-see viewpoints from Wilderness and Knysna to Tsitsikamma National Park.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA Strip -->
+    <section class="cta-strip">
+      <div class="cta-strip-inner">
+        <h2>Ready for Your Next Expedition?</h2>
+        <p>Subscribe for seasonal trail reports, secret lookout spots, and guided tour announcements.</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="handleSubscribe(event)">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+          <button type="submit">Join the Adventure</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modern Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Moeketsi</a></li>
+            <li><a href="blog.html">Blog & Guides</a></li>
+            <li><a href="#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="blog/top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="blog/top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="blog/top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="blog/garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast"></div>
+
+  <!-- Leaflet Map Script -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Leaflet Interactive Map Initialization
+    document.addEventListener("DOMContentLoaded", function () {
+      const map = L.map('map-container').setView([-33.9646, 22.4590], 10);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      const locations = [
+        { name: 'George (Adventure Hub)', coords: [-33.9646, 22.4590], desc: 'Gateway to Outeniqua passes and trails' },
+        { name: 'Wilderness Lagoon & Beach', coords: [-33.9845, 22.4573], desc: 'Canoeing, pristine beaches & Touw River' },
+        { name: 'Kaaimans River Gorge', coords: [-33.9912, 22.5534], desc: 'Stunning canyon, kayak rentals & secret waterfalls' },
+        { name: 'Herold’s Bay', coords: [-34.0538, 22.3965], desc: 'Sheltered cove and coastal cliff walking path' },
+        { name: 'Victoria Bay', coords: [-34.0041, 22.5489], desc: 'World-famous surfing cove & tidal pools' },
+        { name: 'Knysna Heads & Lagoon', coords: [-34.0494, 23.0588], desc: 'Scenic clifftop viewpoints and tranquil lagoon' },
+        { name: 'Tsitsikamma National Park', coords: [-33.9327, 23.8782], desc: 'Suspension bridges and ancient marine reserves' }
+      ];
+
+      locations.forEach(loc => {
+        L.marker(loc.coords)
+          .addTo(map)
+          .bindPopup(`<strong>${loc.name}</strong><br><span style="font-size:0.85rem; color:#555;">${loc.desc}</span>`);
+      });
+
+      // Mobile Menu Toggle
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function () {
+          navLinks.classList.toggle('is-open');
+        });
+      }
+    });
+
+    // Newsletter Toast Handler
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      const toast = document.getElementById('toast');
+      if (toast) {
+        toast.textContent = `🎉 Thank you! ${email} has been subscribed to Rooi Venture trail updates.`;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+      document.getElementById('newsletterForm').reset();
+    }
+  </script>
+</body>
+</html>
