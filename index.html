@@ -410,23 +410,29 @@
       // Initialize Leaflet Map
       const map = L.map('map-container').setView([-33.9900, 22.8000], 9);
 
-      // CartoDB Voyager
-      const voyagerLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19
+      // ESRI World Topo Map (Clean, high-detail topography & nature, no API key required)
+      const topoLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Topo Map & Nature Trails',
+        maxZoom: 18
       }).addTo(map);
 
-      // ESRI Satellite Layer
-      const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        attribution: '&copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+      // ESRI World Street Map (Alternative road view)
+      const streetLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Street Map',
         maxZoom: 18
       });
 
-      // Layer Control (Switcher between Adventure and Satellite)
+      // ESRI Satellite Layer (High-res aerial view)
+      const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Satellite Imagery',
+        maxZoom: 18
+      });
+
+      // Layer Control (Switcher between Topo, Street, and Satellite)
       L.control.layers({
-        "Adventure Map": voyagerLayer,
-        "Satellite View": satelliteLayer
+        "Topographic & Trails": topoLayer,
+        "Street Map": streetLayer,
+        "Satellite Aerial View": satelliteLayer
       }, null, { position: 'topright' }).addTo(map);
 
       // Vector SVG Pin Generator (No Emojis)
