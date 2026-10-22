@@ -47,6 +47,55 @@
   --radius-full: 9999px;
 }
 
+/* Lucide Vector Icons */
+.lucide, svg.icon {
+  display: inline-block;
+  vertical-align: -0.18em;
+  stroke-width: 2;
+  width: 1.15em;
+  height: 1.15em;
+  stroke: currentColor;
+}
+
+.icon-sm {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.stat-icon .lucide,
+.stat-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary);
+}
+
+.pillar-icon .lucide,
+.pillar-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary);
+}
+
+.channel-icon .lucide,
+.channel-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--primary);
+}
+
+.profile-avatar .lucide,
+.profile-avatar svg {
+  width: 64px;
+  height: 64px;
+  stroke: #ffffff;
+}
+
 /* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;

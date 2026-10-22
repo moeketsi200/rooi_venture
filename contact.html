@@ -6,6 +6,7 @@
   <meta name="description" content="Contact Rooi Venture to plan your Garden Route hike, ask trail advice, or book an outdoor adventure excursion in George, South Africa.">
   <title>Contact & Tour Inquiries | Rooi Venture</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
       </a>
 
       <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-        ☰
+        <i data-lucide="menu"></i>
       </button>
 
       <nav>
@@ -32,7 +33,7 @@
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="blog.html" class="nav-link">Blog & Trails</a></li>
           <li><a href="contact.html" class="nav-link active">Contact</a></li>
-          <li><a href="#book" class="nav-cta">Book a Tour →</a></li>
+          <li><a href="#book" class="nav-cta">Book a Tour <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +42,9 @@
   <!-- Hero Header -->
   <section class="blog-hero" style="background-image: linear-gradient(180deg, rgba(4, 47, 46, 0.8) 0%, rgba(19, 78, 74, 0.72) 100%), url('images/knysna-heads.jpg');">
     <div class="container">
-      <span class="hero-badge">✉️ Connect with Moeketsi</span>
+      <span class="hero-badge icon-inline">
+        <i data-lucide="mail" class="icon-sm"></i> Connect with Moeketsi
+      </span>
       <h1 class="hero-title" style="margin-top: 1rem;">Let’s Plan Your Next Adventure</h1>
       <p class="hero-description" style="max-width: 650px; margin: 0 auto;">
         Have a question about a trail? Want local advice or ready to book a guided excursion? Send us a message below.
@@ -64,7 +67,9 @@
 
           <ul class="contact-channels-list">
             <li class="channel-item">
-              <div class="channel-icon">✉️</div>
+              <div class="channel-icon">
+                <i data-lucide="mail"></i>
+              </div>
               <div>
                 <div style="font-size: 0.8rem; color: var(--text-light); text-transform: uppercase; font-weight: 700;">Email Address</div>
                 <a href="mailto:rooiventure@hotmail.com" class="channel-link">rooiventure@hotmail.com</a>
@@ -72,7 +77,9 @@
             </li>
 
             <li class="channel-item">
-              <div class="channel-icon">📍</div>
+              <div class="channel-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
               <div>
                 <div style="font-size: 0.8rem; color: var(--text-light); text-transform: uppercase; font-weight: 700;">Location Base</div>
                 <span style="font-weight: 600; color: var(--text-main);">George, Western Cape, South Africa</span>
@@ -80,7 +87,9 @@
             </li>
 
             <li class="channel-item">
-              <div class="channel-icon">📸</div>
+              <div class="channel-icon">
+                <i data-lucide="camera"></i>
+              </div>
               <div>
                 <div style="font-size: 0.8rem; color: var(--text-light); text-transform: uppercase; font-weight: 700;">Social Media</div>
                 <div style="display: flex; gap: 0.75rem; margin-top: 0.2rem;">
@@ -154,8 +163,8 @@
               <textarea id="book-details" name="details" rows="3" placeholder="Tell us how many people and any specific fitness levels or sights you want to see..."></textarea>
             </div>
 
-            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-              Submit Tour Inquiry 🚀
+            <button type="submit" class="btn-primary icon-inline" style="width: 100%; justify-content: center;">
+              Submit Tour Inquiry <i data-lucide="send" class="icon-sm"></i>
             </button>
           </form>
         </div>
@@ -183,8 +192,8 @@
               <textarea id="contact-message" name="message" rows="4" required></textarea>
             </div>
 
-            <button type="submit" class="btn-secondary" style="background: var(--primary); color: white; border: none; width: 100%; justify-content: center; cursor: pointer;">
-              Send Message ✉️
+            <button type="submit" class="btn-secondary icon-inline" style="background: var(--primary); color: white; border: none; width: 100%; justify-content: center; cursor: pointer;">
+              Send Message <i data-lucide="send" class="icon-sm"></i>
             </button>
           </form>
         </div>
@@ -228,9 +237,9 @@
         <div class="footer-col">
           <h4>Get in Touch</h4>
           <ul class="footer-links">
-            <li>📍 George, Western Cape, SA</li>
-            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
-            <li><a href="contact.html">Send an Inquiry →</a></li>
+            <li class="icon-inline"><i data-lucide="map-pin" class="icon-sm"></i> George, Western Cape, SA</li>
+            <li class="icon-inline"><i data-lucide="mail" class="icon-sm"></i> <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="contact.html" class="icon-inline">Send an Inquiry <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
           </ul>
         </div>
       </div>
@@ -246,14 +255,18 @@
   <div id="toast"></div>
 
   <script>
-    // Mobile navigation toggle
-    const mobileNavToggle = document.getElementById('mobileNavToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (mobileNavToggle && navLinks) {
-      mobileNavToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('is-open');
-      });
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function () {
+          navLinks.classList.toggle('is-open');
+        });
+      }
+    });
 
     // Interactive Toast Submission Handler
     function handleFormSubmit(e, formType) {
@@ -263,10 +276,10 @@
 
       if (formType === 'booking') {
         const name = document.getElementById('book-name').value;
-        toast.textContent = `🎉 Thank you, ${name}! Your tour inquiry has been sent to Rooi Venture.`;
+        toast.textContent = `Thank you, ${name}! Your tour inquiry has been sent to Rooi Venture.`;
       } else {
         const name = document.getElementById('contact-name').value;
-        toast.textContent = `✉️ Message received! Thank you, ${name}. We'll reply soon.`;
+        toast.textContent = `Message received! Thank you, ${name}. We'll reply soon.`;
       }
 
       toast.classList.add('show');

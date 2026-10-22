@@ -7,6 +7,7 @@
   <title>Rooi Venture | Garden Route Adventure Hub & Hiking Trails</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -24,7 +25,7 @@
       </a>
 
       <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-        ☰
+        <i data-lucide="menu"></i>
       </button>
 
       <nav>
@@ -33,7 +34,7 @@
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="blog.html" class="nav-link">Blog & Trails</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="contact.html#book" class="nav-cta">Book a Tour →</a></li>
+          <li><a href="contact.html#book" class="nav-cta">Book a Tour <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -43,7 +44,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">
-        🌿 Garden Route & George, South Africa
+        <i data-lucide="map-pin" class="icon-sm"></i> Garden Route & George, South Africa
       </div>
       <h1 class="hero-title">
         Discover the Untamed Beauty of <span>George & Beyond</span>
@@ -53,10 +54,10 @@
       </p>
       <div class="hero-actions">
         <a href="#featured-adventures" class="btn-primary">
-          Explore Adventures 🥾
+          Explore Adventures <i data-lucide="compass" class="icon-sm"></i>
         </a>
         <a href="#map-section" class="btn-secondary">
-          View Interactive Map 🗺️
+          View Interactive Map <i data-lucide="map" class="icon-sm"></i>
         </a>
       </div>
     </div>
@@ -69,28 +70,36 @@
     <div class="stats-bar">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-icon">🌲</div>
+          <div class="stat-icon">
+            <i data-lucide="trees"></i>
+          </div>
           <div>
             <div class="stat-number">10+</div>
             <div class="stat-label">Curated Hiking Trails</div>
           </div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon">⭐</div>
+          <div class="stat-icon">
+            <i data-lucide="star"></i>
+          </div>
           <div>
             <div class="stat-number">4.9 / 5</div>
             <div class="stat-label">Explorer Satisfaction</div>
           </div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon">🌊</div>
+          <div class="stat-icon">
+            <i data-lucide="waves"></i>
+          </div>
           <div>
             <div class="stat-number">300 km</div>
             <div class="stat-label">Scenic Garden Route</div>
           </div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon">📍</div>
+          <div class="stat-icon">
+            <i data-lucide="navigation"></i>
+          </div>
           <div>
             <div class="stat-number">George, SA</div>
             <div class="stat-label">Adventure Epicenter</div>
@@ -115,13 +124,15 @@
           <div class="card-image-wrap">
             <img src="images/outeniqua-trail.jpg" alt="Outeniqua Trail George">
             <span class="card-badge">Mountain Trail</span>
-            <span class="card-rating-badge">★ 4.9</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.9
+            </span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span>⏱️ Multi-Day / Day Loop</span>
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> Multi-Day / Day Loop</span>
               <span>•</span>
-              <span>💪 Moderate</span>
+              <span class="icon-inline"><i data-lucide="activity" class="icon-sm"></i> Moderate</span>
             </div>
             <h3 class="card-title">Outeniqua Mountain Trail</h3>
             <p class="card-text">
@@ -131,7 +142,9 @@
               “One of the most scenic mountain trails in South Africa!” – Local Guide
             </div>
             <div class="card-footer">
-              <span class="card-link"><a href="blog/top-hiking-trails.html#outeniqua-trail">Read Trail Guide →</a></span>
+              <a href="blog/top-hiking-trails.html#outeniqua-trail" class="card-link">
+                Read Trail Guide <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
             </div>
           </div>
         </article>
@@ -141,13 +154,15 @@
           <div class="card-image-wrap">
             <img src="images/cradock-peak.jpg" alt="Cradock Peak Hike">
             <span class="card-badge">Summit Hike</span>
-            <span class="card-rating-badge">★ 4.8</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.8
+            </span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span>⏱️ 6 - 8 Hours</span>
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> 6 - 8 Hours</span>
               <span>•</span>
-              <span>💪 Challenging</span>
+              <span class="icon-inline"><i data-lucide="activity" class="icon-sm"></i> Challenging</span>
             </div>
             <h3 class="card-title">Cradock Peak Climb</h3>
             <p class="card-text">
@@ -157,7 +172,9 @@
               “Tough climb, but standing above the cloudline is unforgettable.”
             </div>
             <div class="card-footer">
-              <span class="card-link"><a href="blog/top-hiking-trails.html#cradock-peak">Read Trail Guide →</a></span>
+              <a href="blog/top-hiking-trails.html#cradock-peak" class="card-link">
+                Read Trail Guide <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
             </div>
           </div>
         </article>
@@ -167,13 +184,15 @@
           <div class="card-image-wrap">
             <img src="images/kaaimans-river.jpg" alt="Kaaimans River Wilderness">
             <span class="card-badge">River & Gorge</span>
-            <span class="card-rating-badge">★ 4.9</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.9
+            </span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span>⏱️ Half-Day</span>
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> Half-Day</span>
               <span>•</span>
-              <span>💪 Easy / Moderate</span>
+              <span class="icon-inline"><i data-lucide="activity" class="icon-sm"></i> Easy / Moderate</span>
             </div>
             <h3 class="card-title">Kaaimans Gorge & Waterfall</h3>
             <p class="card-text">
@@ -183,7 +202,9 @@
               “Kayaking up the gorge feels like stepping into Jurassic Park.”
             </div>
             <div class="card-footer">
-              <span class="card-link"><a href="blog/garden-route-trips.html">Explore Day Trips →</a></span>
+              <a href="blog/garden-route-trips.html" class="card-link">
+                Explore Day Trips <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
             </div>
           </div>
         </article>
@@ -193,13 +214,15 @@
           <div class="card-image-wrap">
             <img src="images/witfontein-trail.jpg" alt="Witfontein Trail George">
             <span class="card-badge">Forest Walk</span>
-            <span class="card-rating-badge">★ 4.7</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.7
+            </span>
           </div>
           <div class="card-body">
             <div class="card-meta">
-              <span>⏱️ 2 - 3 Hours</span>
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> 2 - 3 Hours</span>
               <span>•</span>
-              <span>💪 Easy / Family</span>
+              <span class="icon-inline"><i data-lucide="activity" class="icon-sm"></i> Easy / Family</span>
             </div>
             <h3 class="card-title">Witfontein Forest Reserve</h3>
             <p class="card-text">
@@ -209,7 +232,9 @@
               “Perfect morning stroll for birdwatching and tranquil forest sounds.”
             </div>
             <div class="card-footer">
-              <span class="card-link"><a href="blog/top-hiking-trails.html#witfontein-trail">Read Trail Guide →</a></span>
+              <a href="blog/top-hiking-trails.html#witfontein-trail" class="card-link">
+                Read Trail Guide <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
             </div>
           </div>
         </article>
@@ -315,7 +340,7 @@
         <p>Subscribe for seasonal trail reports, secret lookout spots, and guided tour announcements.</p>
         <form class="newsletter-form" id="newsletterForm" onsubmit="handleSubscribe(event)">
           <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
-          <button type="submit">Join the Adventure</button>
+          <button type="submit" class="icon-inline">Join the Adventure <i data-lucide="send" class="icon-sm"></i></button>
         </form>
       </div>
     </section>
@@ -356,9 +381,9 @@
         <div class="footer-col">
           <h4>Get in Touch</h4>
           <ul class="footer-links">
-            <li>📍 George, Western Cape, SA</li>
-            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
-            <li><a href="contact.html">Send an Inquiry →</a></li>
+            <li class="icon-inline"><i data-lucide="map-pin" class="icon-sm"></i> George, Western Cape, SA</li>
+            <li class="icon-inline"><i data-lucide="mail" class="icon-sm"></i> <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="contact.html" class="icon-inline">Send an Inquiry <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
           </ul>
         </div>
       </div>
@@ -376,31 +401,51 @@
   <!-- Leaflet Map Script -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    // Leaflet Interactive Map Initialization
     document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Lucide Icons
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      // Initialize Leaflet Map
       const map = L.map('map-container').setView([-33.9900, 22.8000], 9);
 
-      // CartoDB Voyager (Never blocked on file:/// or localhost, rich colors for adventure/tourism)
+      // CartoDB Voyager
       const voyagerLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 19
       }).addTo(map);
 
-      // ESRI Satellite Layer (Alternate option)
+      // ESRI Satellite Layer
       const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: '&copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
         maxZoom: 18
       });
 
-      // Layer Control (Switcher between Topo/Adventure and Satellite)
+      // Layer Control (Switcher between Adventure and Satellite)
       L.control.layers({
-        "🌿 Adventure Map": voyagerLayer,
-        "🛰️ Satellite View": satelliteLayer
+        "Adventure Map": voyagerLayer,
+        "Satellite View": satelliteLayer
       }, null, { position: 'topright' }).addTo(map);
 
-      // Custom Pin Marker Generator
-      function createPin(color, icon) {
+      // Vector SVG Pin Generator (No Emojis)
+      function createVectorPin(color, iconType) {
+        let svgIcon = '';
+        if (iconType === 'mountain') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>';
+        } else if (iconType === 'tree') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 12h5l-4 7h14l-4-7h5L12 2z"/><path d="M12 19v3"/></svg>';
+        } else if (iconType === 'waves') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5-3 5-3 7.5 0s5 3 7.5 0 5-3 5-3"/><path d="M2 17c2.5-3 5-3 7.5 0s5 3 7.5 0 5-3 5-3"/></svg>';
+        } else if (iconType === 'bridge') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M20 19V5"/><path d="M2 15h20"/><path d="M4 9c4 4 12 4 16 0"/></svg>';
+        } else if (iconType === 'kayak') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg>';
+        } else {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>';
+        }
+
         return L.divIcon({
           className: 'custom-map-pin',
           html: `<div style="
@@ -416,7 +461,7 @@
             border: 2px solid #ffffff;
             cursor: pointer;
           ">
-            <span style="transform: rotate(45deg); font-size: 14px;">${icon}</span>
+            <span style="transform: rotate(45deg); display: flex; align-items: center; justify-content: center;">${svgIcon}</span>
           </div>`,
           iconSize: [32, 32],
           iconAnchor: [16, 32],
@@ -429,7 +474,7 @@
           name: 'George Central', 
           category: 'Adventure Hub', 
           color: '#0d9488', 
-          icon: '🌲', 
+          iconType: 'compass', 
           coords: [-33.9646, 22.4590], 
           desc: 'Basecamp for Outeniqua passes, forest trails, and local history.',
           link: 'blog/must-visit-attractions.html'
@@ -438,7 +483,7 @@
           name: 'Cradock & Outeniqua Peaks', 
           category: 'Forest & Mountain Peak', 
           color: '#ea580c', 
-          icon: '⛰️', 
+          iconType: 'mountain', 
           coords: [-33.9167, 22.4833], 
           desc: '1,578m summit climb above the clouds with 360° ocean views.',
           link: 'blog/top-hiking-trails.html#cradock-peak'
@@ -447,7 +492,7 @@
           name: 'Witfontein Forest Reserve', 
           category: 'Forest & Mountain Peak', 
           color: '#0d9488', 
-          icon: '🌿', 
+          iconType: 'tree', 
           coords: [-33.9350, 22.4400], 
           desc: 'Tranquil shaded canopy paths, birdwatching, and pine groves.',
           link: 'blog/top-hiking-trails.html#witfontein-trail'
@@ -456,7 +501,7 @@
           name: 'Kaaimans River Gorge', 
           category: 'Forest & Mountain Peak', 
           color: '#ea580c', 
-          icon: '🛶', 
+          iconType: 'kayak', 
           coords: [-33.9912, 22.5534], 
           desc: 'Deep amber canyon waters, secret waterfalls & kayak adventures.',
           link: 'blog/garden-route-trips.html'
@@ -465,7 +510,7 @@
           name: 'Wilderness Lagoon & Beach', 
           category: 'Coastal Escape', 
           color: '#f59e0b', 
-          icon: '🌊', 
+          iconType: 'waves', 
           coords: [-33.9920, 22.5800], 
           desc: 'Endless golden beaches, canoe trails & paragliding launches.',
           link: 'blog/garden-route-trips.html'
@@ -474,7 +519,7 @@
           name: 'Victoria Bay', 
           category: 'Coastal Escape', 
           color: '#f59e0b', 
-          icon: '🏄', 
+          iconType: 'waves', 
           coords: [-34.0041, 22.5489], 
           desc: 'World-renowned surfing cove, tidal rock pools & ocean strolls.',
           link: 'blog/top-hiking-trails.html#victoria-bay-walk'
@@ -483,7 +528,7 @@
           name: 'Herold’s Bay & Cliff Path', 
           category: 'Coastal Escape', 
           color: '#f59e0b', 
-          icon: '🏖️', 
+          iconType: 'waves', 
           coords: [-34.0538, 22.3965], 
           desc: 'Sheltered cove beach and coastal cliff path with whale watching.',
           link: 'blog/top-hiking-trails.html#herolds-bay-cliff-path'
@@ -492,7 +537,7 @@
           name: 'Knysna Heads & Lagoon', 
           category: 'Coastal Escape', 
           color: '#f59e0b', 
-          icon: '⛵', 
+          iconType: 'waves', 
           coords: [-34.0494, 23.0588], 
           desc: 'Dramatic sandstone sea cliffs, lagoon cruises & fresh oysters.',
           link: 'blog/garden-route-trips.html'
@@ -501,7 +546,7 @@
           name: 'Tsitsikamma National Park', 
           category: 'Forest & Mountain Peak', 
           color: '#ea580c', 
-          icon: '🌉', 
+          iconType: 'bridge', 
           coords: [-34.0200, 23.9000], 
           desc: 'Iconic Storms River suspension bridge and marine reserve.',
           link: 'blog/road-trip-itinerary.html#day7'
@@ -509,7 +554,7 @@
       ];
 
       locations.forEach(loc => {
-        const marker = L.marker(loc.coords, { icon: createPin(loc.color, loc.icon) }).addTo(map);
+        const marker = L.marker(loc.coords, { icon: createVectorPin(loc.color, loc.iconType) }).addTo(map);
         marker.bindPopup(`
           <div style="font-family: inherit; min-width: 190px; padding: 4px 2px;">
             <strong style="font-size: 1rem; color: #134e4a; display: block; margin-bottom: 2px;">${loc.name}</strong>
@@ -536,7 +581,7 @@
       const email = document.getElementById('newsletterEmail').value;
       const toast = document.getElementById('toast');
       if (toast) {
-        toast.textContent = `🎉 Thank you! ${email} has been subscribed to Rooi Venture trail updates.`;
+        toast.textContent = `Thank you! ${email} has been subscribed to Rooi Venture trail updates.`;
         toast.classList.add('show');
         setTimeout(() => toast.classList.remove('show'), 4000);
       }

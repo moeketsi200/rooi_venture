@@ -6,6 +6,7 @@
   <meta name="description" content="About Rooi Venture and founder Moeketsi Isaac Rooi Motloung - Tourism explorer sharing the wonders of George and the Garden Route.">
   <title>About Us | Rooi Venture</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
       </a>
 
       <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-        ☰
+        <i data-lucide="menu"></i>
       </button>
 
       <nav>
@@ -32,7 +33,7 @@
           <li><a href="about.html" class="nav-link active">About</a></li>
           <li><a href="blog.html" class="nav-link">Blog & Trails</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="contact.html#book" class="nav-cta">Book a Tour →</a></li>
+          <li><a href="contact.html#book" class="nav-cta">Book a Tour <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +42,9 @@
   <!-- About Hero -->
   <section class="about-hero">
     <div class="container">
-      <span class="hero-badge">🌿 Founder & Mission</span>
+      <span class="hero-badge icon-inline">
+        <i data-lucide="award" class="icon-sm"></i> Founder & Mission
+      </span>
       <h1 class="hero-title" style="margin-top: 1rem;">Inspiring Exploration Along the Garden Route</h1>
       <p class="hero-description" style="max-width: 650px; margin: 0 auto;">
         Connecting travelers, local communities, and the natural wonderland of George, South Africa.
@@ -55,7 +58,7 @@
     <!-- Profile Card -->
     <div class="about-profile-card">
       <div class="profile-avatar">
-        🧭
+        <i data-lucide="compass"></i>
       </div>
       <div class="profile-details">
         <h2>Moeketsi Isaac Rooi Motloung</h2>
@@ -73,7 +76,9 @@
 
       <!-- Mission Card -->
       <div class="pillar-card">
-        <div class="pillar-icon">🎯</div>
+        <div class="pillar-icon">
+          <i data-lucide="target"></i>
+        </div>
         <h3>Our Mission</h3>
         <ul>
           <li>Craft unforgettable adventures that spark joy, build resilience, and foster connection with nature.</li>
@@ -85,7 +90,9 @@
 
       <!-- Purpose Card -->
       <div class="pillar-card">
-        <div class="pillar-icon">💡</div>
+        <div class="pillar-icon">
+          <i data-lucide="lightbulb"></i>
+        </div>
         <h3>Our Purpose</h3>
         <ul>
           <li>Inspiring a lifelong love of adventure, discovery, and mindful exploration.</li>
@@ -97,7 +104,9 @@
 
       <!-- Values Card -->
       <div class="pillar-card">
-        <div class="pillar-icon">🌱</div>
+        <div class="pillar-icon">
+          <i data-lucide="leaf"></i>
+        </div>
         <h3>Core Values</h3>
         <ul>
           <li><strong>Sustainable Tourism:</strong> Minimizing ecological footprint and preserving pristine fynbos ecosystems.</li>
@@ -115,8 +124,12 @@
         <h2>Want to Explore George Together?</h2>
         <p>Get in touch for custom tour advice, recommended trail loops, or local adventure collaborations.</p>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <a href="contact.html" class="btn-primary">Get in Touch ✉️</a>
-          <a href="blog.html" class="btn-secondary">Explore Trails 🥾</a>
+          <a href="contact.html" class="btn-primary icon-inline">
+            Get in Touch <i data-lucide="mail" class="icon-sm"></i>
+          </a>
+          <a href="blog.html" class="btn-secondary icon-inline">
+            Explore Trails <i data-lucide="compass" class="icon-sm"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -157,9 +170,9 @@
         <div class="footer-col">
           <h4>Get in Touch</h4>
           <ul class="footer-links">
-            <li>📍 George, Western Cape, SA</li>
-            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
-            <li><a href="contact.html">Send an Inquiry →</a></li>
+            <li class="icon-inline"><i data-lucide="map-pin" class="icon-sm"></i> George, Western Cape, SA</li>
+            <li class="icon-inline"><i data-lucide="mail" class="icon-sm"></i> <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="contact.html" class="icon-inline">Send an Inquiry <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
           </ul>
         </div>
       </div>
@@ -172,13 +185,18 @@
   </footer>
 
   <script>
-    const mobileNavToggle = document.getElementById('mobileNavToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (mobileNavToggle && navLinks) {
-      mobileNavToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('is-open');
-      });
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function () {
+          navLinks.classList.toggle('is-open');
+        });
+      }
+    });
   </script>
 </body>
 </html>

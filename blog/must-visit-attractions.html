@@ -6,6 +6,7 @@
   <meta name="description" content="10 Must-Visit Attractions in George: A Local's Guide to steam trains, mountain passes, local food, and scenic spots." />
   <title>10 Must-Visit Attractions in George | Rooi Venture</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
       </a>
 
       <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
-        ☰
+        <i data-lucide="menu"></i>
       </button>
 
       <nav>
@@ -32,7 +33,7 @@
           <li><a href="../about.html" class="nav-link">About</a></li>
           <li><a href="../blog.html" class="nav-link active">Blog & Trails</a></li>
           <li><a href="../contact.html" class="nav-link">Contact</a></li>
-          <li><a href="../contact.html#book" class="nav-cta">Book a Tour →</a></li>
+          <li><a href="../contact.html#book" class="nav-cta">Book a Tour <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -51,13 +52,13 @@
         George may be laid-back, but it is bursting with charm. Surrounded by mountains, ocean, and ancient forest—explore our favorite local highlights.
       </p>
       <div class="article-meta">
-        <span>📅 Garden Route Travel Guide</span>
+        <span class="icon-inline"><i data-lucide="compass" class="icon-sm"></i> Garden Route Travel Guide</span>
         <span>•</span>
-        <span>⭐ 10 Highlights</span>
+        <span class="icon-inline"><i data-lucide="landmark" class="icon-sm"></i> 10 Highlights</span>
         <span>•</span>
-        <span>⏱️ 6 Min Read</span>
+        <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> 6 Min Read</span>
         <span>•</span>
-        <span>By Moeketsi Motloung</span>
+        <span class="icon-inline"><i data-lucide="user" class="icon-sm"></i> Moeketsi Motloung</span>
       </div>
     </article>
 
@@ -178,11 +179,11 @@
 
     <!-- Related Links -->
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
-      <a href="../blog.html" class="btn-secondary" style="color: var(--primary-dark); border-color: var(--border-subtle); background: white;">
-        ← Back to All Guides
+      <a href="../blog.html" class="btn-secondary icon-inline" style="color: var(--primary-dark); border-color: var(--border-subtle); background: white;">
+        <i data-lucide="arrow-left" class="icon-sm"></i> Back to All Guides
       </a>
-      <a href="garden-route-trips.html" class="btn-primary">
-        Next: Best Day Trips from George →
+      <a href="garden-route-trips.html" class="btn-primary icon-inline">
+        Next: Best Day Trips from George <i data-lucide="arrow-right" class="icon-sm"></i>
       </a>
     </div>
 
@@ -222,9 +223,9 @@
         <div class="footer-col">
           <h4>Get in Touch</h4>
           <ul class="footer-links">
-            <li>📍 George, Western Cape, SA</li>
-            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
-            <li><a href="../contact.html">Send an Inquiry →</a></li>
+            <li class="icon-inline"><i data-lucide="map-pin" class="icon-sm"></i> George, Western Cape, SA</li>
+            <li class="icon-inline"><i data-lucide="mail" class="icon-sm"></i> <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="../contact.html" class="icon-inline">Send an Inquiry <i data-lucide="arrow-right" class="icon-sm"></i></a></li>
           </ul>
         </div>
       </div>
@@ -237,13 +238,18 @@
   </footer>
 
   <script>
-    const mobileNavToggle = document.getElementById('mobileNavToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (mobileNavToggle && navLinks) {
-      mobileNavToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('is-open');
-      });
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function () {
+          navLinks.classList.toggle('is-open');
+        });
+      }
+    });
   </script>
 </body>
 </html>
