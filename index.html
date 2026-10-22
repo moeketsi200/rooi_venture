@@ -238,6 +238,66 @@
             </div>
           </div>
         </article>
+
+        <!-- Card 5: Noetzie Beach & Castles -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/noetzie-castles.jpg" alt="Noetzie Beach and Castles">
+            <span class="card-badge" style="background: rgba(124, 58, 237, 0.9);">Secret Gem</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.9
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> Half-Day</span>
+              <span>•</span>
+              <span class="icon-inline"><i data-lucide="sparkles" class="icon-sm"></i> Hidden Coast</span>
+            </div>
+            <h3 class="card-title">Noetzie Castles & Secret Cove</h3>
+            <p class="card-text">
+              Stumble upon magnificent stone castles overlooking a wild, secluded beach flanked by ancient Knysna forest.
+            </p>
+            <div class="card-quote">
+              “Like stepping straight into a fairytale realm hidden behind coastal bluffs.”
+            </div>
+            <div class="card-footer">
+              <a href="blog/hidden-gems-garden-route.html#noetzie-castles" class="card-link">
+                Explore Hidden Gems <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Garden Route Scenic Dining -->
+        <article class="adventure-card">
+          <div class="card-image-wrap">
+            <img src="images/garden-route-dining.jpg" alt="Scenic Restaurants and Dining">
+            <span class="card-badge" style="background: rgba(219, 39, 119, 0.9);">Scenic Foodie</span>
+            <span class="card-rating-badge">
+              <i data-lucide="star" class="icon-sm" style="fill:#b45309;"></i> 4.9
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="icon-inline"><i data-lucide="clock" class="icon-sm"></i> Lunch & Sunset</span>
+              <span>•</span>
+              <span class="icon-inline"><i data-lucide="utensils" class="icon-sm"></i> Seafood & Wine</span>
+            </div>
+            <h3 class="card-title">Oceanfront & Scenic Dining</h3>
+            <p class="card-text">
+              Savor fresh wild oysters, sunset seafood decks, and vineyard bistros nestled in historic mountain passes.
+            </p>
+            <div class="card-quote">
+              “Unbeatable ocean vistas paired with the freshest coastal flavours.”
+            </div>
+            <div class="card-footer">
+              <a href="blog/best-restaurants.html" class="card-link">
+                Read Dining Guide <i data-lucide="arrow-right" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -259,6 +319,8 @@
         <div class="legend-item"><span class="legend-dot" style="background:#0d9488;"></span> George Central Hub</div>
         <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> Coastal Escapes</div>
         <div class="legend-item"><span class="legend-dot" style="background:#ea580c;"></span> Forest & Mountain Peaks</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#7c3aed;"></span> Secret Gems & History</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#db2777;"></span> Scenic Dining</div>
       </div>
     </section>
 
@@ -448,6 +510,10 @@
           svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M20 19V5"/><path d="M2 15h20"/><path d="M4 9c4 4 12 4 16 0"/></svg>';
         } else if (iconType === 'kayak') {
           svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg>';
+        } else if (iconType === 'gem') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 18 3 22 9 12 22 2 9"/></svg>';
+        } else if (iconType === 'utensils') {
+          svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2"/><path d="M15 2v19"/><path d="M5 2v5a3 3 0 0 0 6 0V2"/><path d="M8 7v14"/></svg>';
         } else {
           svgIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>';
         }
@@ -556,6 +622,60 @@
           coords: [-34.0200, 23.9000], 
           desc: 'Iconic Storms River suspension bridge and marine reserve.',
           link: 'blog/road-trip-itinerary.html#day7'
+        },
+        { 
+          name: 'Noetzie Beach & Castles', 
+          category: 'Secret Spot', 
+          color: '#7c3aed', 
+          iconType: 'gem', 
+          coords: [-34.0750, 23.1250], 
+          desc: 'Secluded cove with majestic stone castles, indigenous forest & tranquil river.',
+          link: 'blog/hidden-gems-garden-route.html#noetzie-castles'
+        },
+        { 
+          name: 'Jubilee Creek & Millwood', 
+          category: 'Secret Spot', 
+          color: '#7c3aed', 
+          iconType: 'gem', 
+          coords: [-33.9160, 22.9850], 
+          desc: 'Ancient 1880s goldfield ghost town, amber streams & secret forest rock pool.',
+          link: 'blog/hidden-gems-garden-route.html#jubilee-creek'
+        },
+        { 
+          name: 'Gericke’s Point & Lion’s Rock', 
+          category: 'Secret Spot', 
+          color: '#7c3aed', 
+          iconType: 'gem', 
+          coords: [-34.0350, 22.7700], 
+          desc: 'Fossilized sandstone dunes, secluded low-tide snorkel pools & marine life.',
+          link: 'blog/hidden-gems-garden-route.html#gerickes-point'
+        },
+        { 
+          name: 'East Head Café & Knysna Lagoon', 
+          category: 'Scenic Dining', 
+          color: '#db2777', 
+          iconType: 'utensils', 
+          coords: [-34.0780, 23.0590], 
+          desc: 'Iconic cliffside dining perched right over the turbulent Knysna Heads channel.',
+          link: 'blog/best-restaurants.html#east-head-cafe'
+        },
+        { 
+          name: 'Salinas Beach Restaurant', 
+          category: 'Scenic Dining', 
+          color: '#db2777', 
+          iconType: 'utensils', 
+          coords: [-33.9930, 22.5760], 
+          desc: 'Oceanfront sunset dining deck in Wilderness serving fresh prawns & cocktails.',
+          link: 'blog/best-restaurants.html#salinas-wilderness'
+        },
+        { 
+          name: 'The Fat Fish (George & Plett)', 
+          category: 'Scenic Dining', 
+          color: '#db2777', 
+          iconType: 'utensils', 
+          coords: [-33.9610, 22.4640], 
+          desc: 'Award-winning sustainable seafood tapas, kingklip, and local wines.',
+          link: 'blog/best-restaurants.html#fat-fish'
         }
       ];
 
