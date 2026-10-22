@@ -2,58 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Best Day Trips from George</title>
-  <meta name="description" content="Top day trips to explore around George, Western Cape including Knysna, Wilderness, Oudtshoorn, Tsitsikamma and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring the Garden Route: Best Day Trips from George | Rooi Venture</title>
+  <meta name="description" content="Top day trips to explore around George, Western Cape including Knysna, Wilderness, Oudtshoorn, Tsitsikamma and Mossel Bay.">
   <link rel="stylesheet" href="../css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Sticky Glass Navigation -->
   <header>
     <div class="header-container">
-      <div class="branding">
-        <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
-        <div>
-          <h1>Rooi Venture</h1>
-          <p class="tagline">Your adventure awaits</p>
+      <a href="../index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
         </div>
-      </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../blog.html" class="active">Blog</a>
-        <a href="../contact.html">Contact</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../blog.html" class="nav-link active">Blog & Trails</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li><a href="../contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
       </nav>
     </div>
-  </ header>
+  </header>
 
-  <div class="banner">
-    <img src="../images/garden-route-banner.jpg" alt="Scenic view of the Garden Route">
-  </div>
+  <!-- Article Container -->
+  <main class="container" style="max-width: 960px; padding-top: 2.5rem; padding-bottom: 4rem;">
 
-  <main class="container">
-    <article class="blog-post">
-      <h2>Exploring the Garden Route: Best Day Trips from George</h2>
-      <p>Based in George? Lucky you. There are amazing day trips all within an hour or two. Here are my top picks:</p>
-      <ul>
-        <li><strong>Knysna</strong> – Lagoon cruises, the Knysna Heads, and oysters.</li>
-        <li><strong>Wilderness</strong> – Canoeing, paragliding, and pristine beaches.</li>
-        <li><strong>Oudtshoorn</strong> – Cango Caves and ostrich farms await.</li>
-        <li><strong>Hartenbos</strong> – A family-friendly beach spot with a holiday vibe.</li>
-        <li><strong>Tsitsikamma National Park</strong> – Dramatic coastlines and hikes.</li>
-        <li><strong>Mossel Bay</strong> – Shark cage diving, beaches, and museums.</li>
-        <li><strong>Great Brak River</strong> – A small town feel with big scenery.</li>
-      </ul>
-      <p>These trips give you a taste of everything — nature, culture, and fun. George is the perfect launchpad!</p>
-
-      <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com/blog/garden-route-trips.html" target="_blank">Share on Facebook</a>
-        <a href="https://twitter.com/intent/tweet?url=https://yourdomain.com/blog/garden-route-trips.html&text=Explore+the+best+day+trips+from+George!" target="_blank">Share on Twitter</a>
+    <!-- Article Header -->
+    <article class="article-header">
+      <div class="article-breadcrumb">
+        <a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / <span>Day Trips</span>
+      </div>
+      <h1 class="article-title">Exploring the Garden Route: Best Day Trips from George</h1>
+      <p class="section-desc" style="margin-bottom: 1.25rem;">
+        Based in George? You are in the ultimate launchpad. Here are the top day excursions located within a scenic 1 to 2 hour drive.
+      </p>
+      <div class="article-meta">
+        <span>📅 Garden Route Travel Guide</span>
+        <span>•</span>
+        <span>🚗 Day Trips</span>
+        <span>•</span>
+        <span>⏱️ 5 Min Read</span>
+        <span>•</span>
+        <span>By Moeketsi Motloung</span>
       </div>
     </article>
+
+    <!-- Banner -->
+    <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-md);">
+      <img src="../images/garden-route-banner.jpg" alt="Garden Route Day Trip Landscape" style="width: 100%; max-height: 400px; object-fit: cover;">
+    </div>
+
+    <!-- Day Trips List -->
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+
+      <!-- Trip 1: Wilderness -->
+      <section class="pillar-card">
+        <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin-bottom: 0.5rem;">1. Wilderness & Touw River Lagoon (15 mins from George)</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/wilderness.jpg" alt="Wilderness Beach and River" style="width: 100%; max-height: 380px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          Wilderness is George’s neighboring eco-wonderland. Rent a canoe on the Touw River to paddle to the Half-Collared Kingfisher Trail waterfall, relax on golden endless beaches, or watch paragliders soar along the coastline.
+        </p>
+      </section>
+
+      <!-- Trip 2: Knysna Heads -->
+      <section class="pillar-card">
+        <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin-bottom: 0.5rem;">2. Knysna Heads & Waterfront (55 mins from George)</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/knysna-heads.jpg" alt="Knysna Heads Lagoon" style="width: 100%; max-height: 380px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          Famous for the dramatic sandstone cliffs guarding its tranquil lagoon mouth. Enjoy fresh oysters at the vibrant waterfront, take a ferry across the lagoon, or walk along Coney Glen beach.
+        </p>
+      </section>
+
+      <!-- Trip 3: Tsitsikamma -->
+      <section class="pillar-card">
+        <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin-bottom: 0.5rem;">3. Tsitsikamma National Park & Storms River (1h 45m from George)</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/tsitsikamma.jpg" alt="Tsitsikamma National Park" style="width: 100%; max-height: 380px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          Where ancient forest meets the stormy Indian Ocean. Walk across the thrilling Storms River suspension bridge, kayak through deep gorge ravines, or hike the first section of the world-famous Otter Trail.
+        </p>
+      </section>
+
+      <!-- Trip 4: Mossel Bay -->
+      <section class="pillar-card">
+        <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin-bottom: 0.5rem;">4. Mossel Bay & The Point (40 mins from George)</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/mossel-bay.jpg" alt="Mossel Bay Coastline" style="width: 100%; max-height: 380px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          Visit the historic Post Office Tree at the Bartolomeu Dias Museum Complex, ride the world's longest over-ocean zipline, and explore tidal rock pools along The Point.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Related Links -->
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="../blog.html" class="btn-secondary" style="color: var(--primary-dark); border-color: var(--border-subtle); background: white;">
+        ← Back to All Guides
+      </a>
+      <a href="road-trip-itinerary.html" class="btn-primary">
+        Next: 7-Day Road Trip Itinerary →
+      </a>
+    </div>
+
   </main>
 
+  <!-- Modern Footer -->
   <footer>
-    <p>&copy; 2025 Rooi Venture</p>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Moeketsi</a></li>
+            <li><a href="../blog.html">Blog & Guides</a></li>
+            <li><a href="../index.html#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="../contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>

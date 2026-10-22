@@ -9,127 +9,247 @@
 </head>
 <body>
 
-<header>
-  <div class="header-container">
-    <div class="branding">
-      <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
-      <div>
-        <h1>What to Pack for the Garden Route</h1>
-        <p class="tagline">A Smart Traveler’s Guide</p>
+  <!-- Sticky Glass Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
+        </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../blog.html" class="nav-link active">Blog & Trails</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li><a href="../contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article Container -->
+  <main class="container" style="max-width: 920px; padding-top: 2.5rem; padding-bottom: 4rem;">
+    
+    <!-- Article Header -->
+    <article class="article-header">
+      <div class="article-breadcrumb">
+        <a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / <span>Packing Guide</span>
+      </div>
+      <h1 class="article-title">What to Pack for the Garden Route</h1>
+      <p class="section-desc" style="margin-bottom: 1.25rem;">
+        A Smart Traveler’s Guide – Everything you need for a smooth, scenic journey through George, Knysna, Tsitsikamma, and beyond.
+      </p>
+      <div class="article-meta">
+        <span>📅 Updated 2025</span>
+        <span>•</span>
+        <span>🎒 Gear & Tips</span>
+        <span>•</span>
+        <span>⏱️ 5 Min Read</span>
+        <span>•</span>
+        <span>By Moeketsi Motloung</span>
+      </div>
+    </article>
+
+    <!-- Hero Banner Image -->
+    <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-md);">
+      <img src="../images/grbg.jpg" alt="Packing for Garden Route Adventure" style="width: 100%; max-height: 400px; object-fit: cover;">
+    </div>
+
+    <!-- Article Content Cards -->
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+
+      <!-- Section 1: Essentials -->
+      <section class="pillar-card">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">🧳</span>
+          <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin: 0;">Essential Items for Every Traveler</h2>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">Must-haves before you set foot on the trail or road:</p>
+        <ul>
+          <li><strong>Passport / South African ID:</strong> Required for airport security and nature reserve registration.</li>
+          <li><strong>Travel Insurance Documents:</strong> Always recommended for outdoor hiking adventures.</li>
+          <li><strong>Compact Daypack (15–25L):</strong> With comfortable chest and waist straps for day hikes.</li>
+          <li><strong>Comfortable Walking Shoes:</strong> Sturdy trainers or lightweight trail running shoes.</li>
+          <li><strong>Reusable Water Bottle:</strong> Stay hydrated and avoid single-use plastics along trails.</li>
+          <li><strong>Portable Power Bank:</strong> Mountain GPS and photography drain battery quickly.</li>
+          <li><strong>Card & Small Cash:</strong> Card is accepted widely, but small town farmstalls and tip spots appreciate cash.</li>
+        </ul>
+      </section>
+
+      <!-- Section 2: Summer vs Winter -->
+      <section class="pillar-card">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">🌦</span>
+          <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin: 0;">Seasonal Tips: Summer vs. Winter</h2>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.25rem;">
+          <div style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h3 style="color: #b45309; font-size: 1.2rem; margin-bottom: 0.5rem;">☀️ Summer (Nov – March)</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.75rem;">Warm & sunny days with afternoon coastal breezes:</p>
+            <ul style="margin: 0;">
+              <li>Breathable lightweight UV clothing</li>
+              <li>Wide-brim sunhat & polarized sunglasses</li>
+              <li>SPF 50+ mineral reef-safe sunscreen</li>
+              <li>Swimwear & quick-dry microfiber towel</li>
+              <li>Insect repellent for river walks</li>
+            </ul>
+          </div>
+
+          <div style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <h3 style="color: var(--primary-light); font-size: 1.2rem; margin-bottom: 0.5rem;">❄️ Winter (June – August)</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.75rem;">Crisp mornings and misty mountain passes:</p>
+            <ul style="margin: 0;">
+              <li>Thermal base layer for early summit climbs</li>
+              <li>Insulating fleece or lightweight puffer jacket</li>
+              <li>Waterproof & windproof rain shell</li>
+              <li>Warm beanie & lightweight gloves</li>
+              <li>Moisture-wicking merino wool hiking socks</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Outdoor Hiking Gear -->
+      <section class="pillar-card">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">🥾</span>
+          <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin: 0;">Adventure & Hiking Gear</h2>
+        </div>
+        <ul>
+          <li><strong>High-Traction Hiking Boots:</strong> Essential for rocky peaks like Cradock and Outeniqua.</li>
+          <li><strong>Lightweight Rain Poncho or Shell:</strong> Coastal Garden Route weather can shift unexpectedly.</li>
+          <li><strong>Headlamp or LED Torch:</strong> With spare batteries for early sunrise starts or late descents.</li>
+          <li><strong>Compact First Aid Kit:</strong> Antiseptic wipes, blister plasters, pain relief, and rehydration salts.</li>
+          <li><strong>High-Energy Trail Snacks:</strong> Biltong, nuts, dried mango, and electrolyte tablets.</li>
+          <li><strong>Offline Navigation Maps:</strong> Pre-download AllTrails or Google Maps (mobile signal is patchy in forests).</li>
+        </ul>
+      </section>
+
+      <!-- Section 4: Beach Essentials -->
+      <section class="pillar-card">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">🏖</span>
+          <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin: 0;">Beach & Lagoon Must-Haves</h2>
+        </div>
+        <ul>
+          <li>Sand-free beach blanket or compact camp chairs.</li>
+          <li>Waterproof dry-bag (10L) for kayaking Kaaimans River or Wilderness Touw River.</li>
+          <li>Snorkel mask and water shoes for tidal pools at Herold’s Bay and Victoria Bay.</li>
+          <li>Insulated cooler pouch for cold drinks and lunch.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Eco-Friendly Tips -->
+      <section class="pillar-card" style="border-left: 4px solid var(--primary-light);">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">🌱</span>
+          <h2 style="font-size: 1.45rem; color: var(--primary-dark); margin: 0;">Sustainable & Leave-No-Trace Travel</h2>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          The Garden Route is part of the fragile Cape Floral Kingdom. Please follow these simple guidelines:
+        </p>
+        <ul>
+          <li><strong>Pack it in, pack it out:</strong> Always carry your trash back from trails and beaches.</li>
+          <li><strong>Stick to marked trails:</strong> Protect vulnerable fynbos species from erosion.</li>
+          <li><strong>Respect wildlife:</strong> Do not feed baboons or disturb nesting marine birds.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6: What NOT to pack -->
+      <section class="pillar-card" style="background: #fffbeb; border: 1px solid #fde68a;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="font-size: 1.75rem;">⚠️</span>
+          <h2 style="font-size: 1.45rem; color: #92400e; margin: 0;">What to Leave at Home</h2>
+        </div>
+        <ul style="color: #78350f;">
+          <li>Flashy jewelry or expensive watches that attract unnecessary attention or could be lost on trails.</li>
+          <li>Bulky hard-shell luggage if you are doing multi-destination road trips (duffel bags fit boot space much better).</li>
+          <li>Overly formal clothes — Garden Route restaurants and activities are relaxed, friendly, and casual.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Related Links & Navigation -->
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="../blog.html" class="btn-secondary" style="color: var(--primary-dark); border-color: var(--border-subtle); background: white;">
+        ← Back to All Guides
+      </a>
+      <a href="top-hiking-trails.html" class="btn-primary">
+        Next: Top 10 Hiking Trails →
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Modern Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Moeketsi</a></li>
+            <li><a href="../blog.html">Blog & Guides</a></li>
+            <li><a href="../index.html#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="../contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
       </div>
     </div>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
-      <a href="../blog.html">Blog</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  </footer>
 
-<main class="blog-post">
-  <section>
-    <h2>🧳 Essential Items for Every Traveler</h2>
-    <ul>
-      <li>Passport or ID (for local flights)</li>
-      <li>Travel insurance documents</li>
-      <li>Daypack for excursions</li>
-      <li>Comfortable walking shoes</li>
-      <li>Reusable water bottle</li>
-      <li>Chargers, power bank & travel adapter</li>
-      <li>Cash & card (some small towns are cash-preferred)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🌦 Seasonal Tips: What to Pack for Summer vs Winter</h2>
-    <h3>Summer (Nov–Mar):</h3>
-    <p>Warm & sunny, with occasional rain near Tsitsikamma.</p>
-    <ul>
-      <li>Lightweight clothing</li>
-      <li>Sunhat, sunglasses & SPF</li>
-      <li>Swimsuit & flip-flops</li>
-      <li>Bug spray (for coastal hikes)</li>
-    </ul>
-
-    <h3>Winter (Jun–Aug):</h3>
-    <p>Cool mornings in George, misty Knysna forests, but still great for travel!</p>
-    <ul>
-      <li>Layers (hoodie, fleece, waterproof jacket)</li>
-      <li>Beanie or scarf for early hikes</li>
-      <li>Comfortable boots</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🥾 Adventure Gear: For Hikers and Outdoor Lovers</h2>
-    <ul>
-      <li>Hiking boots or trail shoes</li>
-      <li>Quick-dry clothing</li>
-      <li>Headlamp or flashlight</li>
-      <li>First-aid kit</li>
-      <li>Snacks or trail mix</li>
-      <li>Map or offline GPS app (signal can be patchy in forests)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🏖 Beach Day Must-Haves</h2>
-    <ul>
-      <li>Beach towel or picnic blanket</li>
-      <li>Swimwear & cover-up</li>
-      <li>Cooler bag with drinks</li>
-      <li>Beach umbrella or tent (optional)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🌱 Eco-Friendly Packing Tips</h2>
-    <p>Help keep the Garden Route pristine by packing consciously:</p>
-    <ul>
-      <li>Reusable utensils & containers</li>
-      <li>Canvas tote bags</li>
-      <li>Biodegradable toiletries</li>
-      <li>Refillable water bottle</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📦 Bonus: What NOT to Pack</h2>
-    <ul>
-      <li>Expensive jewelry – it’s a casual vibe here</li>
-      <li>Heavy books – bring a Kindle or download offline maps</li>
-      <li>Too many formal clothes – it’s all about comfort</li>
-    </ul>
-  </section>
-
-  <section class="newsletter-cta">
-    <h2>📬 Stay Updated with Rooi Venture</h2>
-    <p>Liked this guide? Subscribe to our newsletter for more travel tips, exclusive gear picks, and upcoming routes!</p>
-    <form action="../php/newsletter.php" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="download-section">
-    <h2>✅ Download Printable Checklist</h2>
-    <p>Want to take this list on the road? Download our ready-to-print PDF version.</p>
-    <a href="../assets/garden-route-packing-checklist.pdf" class="btn" download>Download Checklist</a>
-  </section>
-
-  <section class="image-suggestions">
-    <h2>📸 Bonus Image Suggestions</h2>
-    <ul>
-      <li>Packing gear on a trail</li>
-      <li>Scenic Garden Route coast view</li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 Rooi Venture | Adventure Starts Here 🌍</p>
-</footer>
-
+  <script>
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>

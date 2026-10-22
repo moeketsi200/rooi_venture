@@ -2,225 +2,243 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ultimate Garden Route Road Trip Itinerary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ultimate 7-Day Garden Route Road Trip Itinerary from Mossel Bay and George to Tsitsikamma." />
+  <title>Ultimate Garden Route Road Trip Itinerary | Rooi Venture</title>
   <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .blog-post h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #2a4365;
-    }
-
-    .day {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .day img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
-    }
-
-    .tip-box {
-      background: #fffbe0;
-      border-left: 5px solid #f4c542;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 6px;
-    }
-
-    .cta-box {
-      background-color: #eef6ff;
-      padding: 2rem;
-      border-radius: 8px;
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .cta-button {
-      background: #007bff;
-      color: #fff;
-      padding: 0.8rem 1.2rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-
-    .cta-button:hover {
-      background-color: #0056b3;
-    }
-
-    .itinerary-nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .itinerary-nav a {
-      background: #d9eaff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      text-decoration: none;
-      color: #2a4365;
-      font-weight: 500;
-    }
-
-    .itinerary-nav a:hover {
-      background: #a3d0ff;
-    }
-  </style>
 </head>
 <body>
+
+  <!-- Sticky Glass Navigation -->
   <header>
     <div class="header-container">
-      <div class="branding">
-        <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo" />
-        <div>
-          <h1>Rooi Venture</h1>
-          <p class="tagline">Your adventure awaits</p>
+      <a href="../index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo" />
         </div>
-      </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contact</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../blog.html" class="nav-link active">Blog & Trails</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li><a href="../contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <article class="blog-post">
-      <h2>Ultimate Garden Route Road Trip Itinerary</h2>
-      <p>7 unforgettable days along South Africa’s most scenic adventure route.</p>
+  <!-- Article Container -->
+  <main class="container" style="max-width: 960px; padding-top: 2.5rem; padding-bottom: 4rem;">
 
-      <nav class="itinerary-nav">
-        <ul>
-          <li><a href="#day1">Day 1</a></li>
-          <li><a href="#day2">Day 2</a></li>
-          <li><a href="#day3">Day 3</a></li>
-          <li><a href="#day4">Day 4</a></li>
-          <li><a href="#day5">Day 5</a></li>
-          <li><a href="#day6">Day 6</a></li>
-          <li><a href="#day7">Day 7</a></li>
-        </ul>
-      </nav>
+    <!-- Article Header -->
+    <article class="article-header">
+      <div class="article-breadcrumb">
+        <a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / <span>Road Trips</span>
+      </div>
+      <h1 class="article-title">Ultimate Garden Route Road Trip Itinerary</h1>
+      <p class="section-desc" style="margin-bottom: 1.25rem;">
+        7 unforgettable days driving along South Africa’s most scenic adventure route, from historic Mossel Bay through the heart of George to Storms River.
+      </p>
+      <div class="article-meta">
+        <span>📅 Garden Route Travel Guide</span>
+        <span>•</span>
+        <span>🗺️ 7-Day Driving Plan</span>
+        <span>•</span>
+        <span>⏱️ 9 Min Read</span>
+        <span>•</span>
+        <span>By Moeketsi Motloung</span>
+      </div>
+    </article>
+
+    <!-- Itinerary Quick Nav Pills -->
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem;">
+      <a href="#day1" class="filter-btn">Day 1: Mossel Bay</a>
+      <a href="#day2" class="filter-btn">Day 2: George Hub</a>
+      <a href="#day3" class="filter-btn">Day 3: Wilderness</a>
+      <a href="#day4" class="filter-btn">Day 4: Knysna</a>
+      <a href="#day5" class="filter-btn">Day 5: Plettenberg Bay</a>
+      <a href="#day6" class="filter-btn">Day 6: Nature’s Valley</a>
+      <a href="#day7" class="filter-btn">Day 7: Tsitsikamma</a>
+    </div>
+
+    <!-- Day by Day Sections -->
+    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
 
       <!-- Day 1 -->
-      <section class="day" id="day1">
-        <h3>🚗 Day 1: Mossel Bay</h3>
-        <img src="../images/mossel-bay.jpg" alt="Mossel Bay Beach">
-        <ul>
-          <li>Sunrise beach walk.</li>
-          <li>Bartolomeu Dias Museum Complex.</li>
-          <li>Shark cage diving or seafood at The Point.</li>
+      <section class="pillar-card" id="day1">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🚗 Day 1: Mossel Bay – Maritime Heritage & Ocean Thrills</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/mossel-bay.jpg" alt="Mossel Bay Beach" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Early morning stroll along Santos Beach.</li>
+          <li>Explore the Bartolomeu Dias Museum Complex and the 500-year-old Post Office Tree.</li>
+          <li>Cage diving or fresh seafood lunch overlooking the waves at The Point.</li>
         </ul>
-        <div class="tip-box">
-          <strong>Travel Tip:</strong> Book shark cage diving at least 48 hours in advance!
+        <div style="background: #fffbeb; border-left: 4px solid var(--accent); padding: 0.85rem 1rem; border-radius: var(--radius-sm); margin-top: 1rem; font-size: 0.92rem; color: #92400e;">
+          💡 <strong>Travel Tip:</strong> Shark cage diving trips depart early morning and should be reserved at least 48 hours ahead.
         </div>
       </section>
 
       <!-- Day 2 -->
-      <section class="day" id="day2">
-        <h3>🌄 Day 2: George</h3>
-        <img src="../images/george-day.jpg" alt="George scenery">
-        <ul>
-          <li>Hidden spots: Kaaimans River, Pepsi Pools.</li>
-          <li>Outeniqua Transport Museum.</li>
-          <li>Picnic at Victoria Bay or dinner in town.</li>
+      <section class="pillar-card" id="day2">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🌄 Day 2: George – Mountain Peaks & Forest Reserves</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/george-day.jpg" alt="George Scenery" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Hike the shady canopy loops of Witfontein Nature Reserve.</li>
+          <li>Discover vintage steam locomotives at the Outeniqua Transport Museum.</li>
+          <li>Sunset fish and chips while watching local surfers at Victoria Bay.</li>
         </ul>
       </section>
 
       <!-- Day 3 -->
-      <section class="day" id="day3">
-        <h3>🌲 Day 3: Wilderness</h3>
-        <img src="../images/wilderness.jpg" alt="Wilderness River">
-        <ul>
-          <li>Kayak the Touw River.</li>
-          <li>Hike the Half-Collared Kingfisher Trail.</li>
-          <li>Stay in a treetop lodge.</li>
+      <section class="pillar-card" id="day3">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🌲 Day 3: Wilderness – Waterways & Paragliding</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/wilderness.jpg" alt="Wilderness River" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Rent a canoe on the Touw River and hike to the secret forest waterfall.</li>
+          <li>Stop by the Map of Africa viewpoint and watch tandem paragliders.</li>
+          <li>Dine at the bustling village sidewalk cafes in Wilderness town.</li>
         </ul>
       </section>
 
       <!-- Day 4 -->
-      <section class="day" id="day4">
-        <h3>🌉 Day 4: Knysna</h3>
-        <img src="../images/knysna-heads.jpg" alt="Knysna Heads">
-        <ul>
-          <li>Knysna Heads viewpoint.</li>
-          <li>Boat cruise on the lagoon.</li>
-          <li>Fresh oysters at the Waterfront.</li>
+      <section class="pillar-card" id="day4">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🌉 Day 4: Knysna – Estuary Cruises & Clifftop Views</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/knysna-heads.jpg" alt="Knysna Heads" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Take the scenic drive up to the Eastern Knysna Head viewpoint.</li>
+          <li>Board a lagoon catamaran cruise out to the ocean channels.</li>
+          <li>Sample world-renowned Knysna wild oysters at the Quays Waterfront.</li>
         </ul>
       </section>
 
       <!-- Day 5 -->
-      <section class="day" id="day5">
-        <h3>🦓 Day 5: Plettenberg Bay</h3>
-        <img src="../images/plett.jpg" alt="Plettenberg Bay">
-        <ul>
-          <li>Robberg Nature Reserve hike.</li>
-          <li>Birds of Eden and Monkeyland.</li>
-          <li>Beach time at Lookout Beach.</li>
+      <section class="pillar-card" id="day5">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🦓 Day 5: Plettenberg Bay – Marine Sanctuaries & Peninsula Trails</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/plett.jpg" alt="Plettenberg Bay" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Hike the dramatic peninsula loop of Robberg Nature Reserve past the Cape fur seal colony.</li>
+          <li>Walk through the forest canopy at Birds of Eden and Monkeyland.</li>
+          <li>Enjoy golden hour swimming at Lookout Beach.</li>
         </ul>
       </section>
 
       <!-- Day 6 -->
-      <section class="day" id="day6">
-        <h3>🌳 Day 6: Nature’s Valley</h3>
-        <img src="../images/natures-valley.jpg" alt="Nature's Valley">
-        <ul>
-          <li>Forest escape in a hidden paradise.</li>
-          <li>Hike part of the Otter Trail.</li>
-          <li>Reconnect with nature.</li>
+      <section class="pillar-card" id="day6">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🌳 Day 6: Nature’s Valley – Hidden Forest Sanctuary</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/natures-valley.jpg" alt="Nature's Valley" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Drive down the scenic winding Groot River Pass.</li>
+          <li>Relax on the completely undeveloped, pristine Nature’s Valley beach.</li>
+          <li>Walk the final stretch of the world-famous Otter Trail along the lagoon.</li>
         </ul>
       </section>
 
       <!-- Day 7 -->
-      <section class="day" id="day7">
-        <h3>🌊 Day 7: Tsitsikamma & Storms River</h3>
-        <img src="../images/tsitsikamma.jpg" alt="Storms River Suspension Bridge">
-        <ul>
-          <li>Suspension bridge in Tsitsikamma National Park.</li>
-          <li>Ziplining or tubing in Storms River Gorge.</li>
-          <li>Stargazing by the ocean.</li>
+      <section class="pillar-card" id="day7">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 0.75rem;">🌊 Day 7: Tsitsikamma & Storms River – The Grand Finale</h2>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/tsitsikamma.jpg" alt="Tsitsikamma National Park" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <ul style="color: var(--text-muted); line-height: 1.7;">
+          <li>Cross the thrilling 77-meter Storms River suspension bridge over the churning surf.</li>
+          <li>Blackwater tubing or canopy zipline through indigenous yellowwood forests.</li>
+          <li>Celebrate the journey with dinner overlooking the ocean breakers.</li>
         </ul>
       </section>
 
-      <!-- CTA -->
-      <div class="cta-box">
-        <h4>📥 Download the Printable Itinerary PDF</h4>
-        <p><strong>Want to keep it with you?</strong> Download the PDF and start packing for your next adventure.</p>
-        <a href="../assets/guide.pdf" class="cta-button" download>Download Itinerary</a>
-      </div>
-    </article>
+    </div>
+
+    <!-- Related Links -->
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="../blog.html" class="btn-secondary" style="color: var(--primary-dark); border-color: var(--border-subtle); background: white;">
+        ← Back to All Guides
+      </a>
+      <a href="secret-george.html" class="btn-primary">
+        Next: Secret George Hidden Spots →
+      </a>
+    </div>
+
   </main>
 
+  <!-- Modern Footer -->
   <footer>
-    <p>&copy; 2025 Rooi Venture</p>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Moeketsi</a></li>
+            <li><a href="../blog.html">Blog & Guides</a></li>
+            <li><a href="../index.html#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="../contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>

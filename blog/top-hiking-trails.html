@@ -1,132 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Top Hiking Trails in and Around George - Rooi Venture</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the top 10 hiking trails in and around George, Western Cape. From Cradock Peak to Outeniqua Trail, explore the best routes on the Garden Route.">
+  <title>Top 10 Hiking Trails in and Around George | Rooi Venture</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+  <!-- Sticky Glass Navigation -->
   <header>
     <div class="header-container">
-      <div class="branding">
-        <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
-        <div>
-          <h1>Top 10 Hiking Trails in and Around George</h1>
+      <a href="../index.html" class="branding">
+        <div class="logo-wrapper">
+          <img src="../images/logo.png" alt="Rooi Venture Logo" class="logo">
         </div>
-      </div>
+        <div class="brand-text">
+          <h1>Rooi Venture</h1>
+          <p class="tagline">Your Adventure Awaits</p>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contact</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../blog.html" class="nav-link active">Blog & Trails</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li><a href="../contact.html#book" class="nav-cta">Book a Tour →</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <p>George is a paradise for outdoor lovers! Whether you're a casual stroller or a seasoned hiker, this region offers a range of breathtaking trails. Dive into our detailed guide to find your perfect hike:</p>
+  <!-- Article Container -->
+  <main class="container" style="max-width: 960px; padding-top: 2.5rem; padding-bottom: 4rem;">
 
-    <!-- Trail 1 -->
-    <section id="outeniqua-trail">
-      <h2>1. Outeniqua Trail</h2>
-      <img src="../images/outeniqua-trail.jpg" alt="Outeniqua Trail" width="100%">
-      <p><strong>What:</strong> This iconic multi-day hike stretches about 26 km through the rugged Outeniqua Mountains...</p>
-    </section>
-
-    <!-- Trail 2 -->
-    <section id="witfontein-trail">
-      <h2>2. Witfontein Trail</h2>
-      <img src="../images/witfontein-trail.jpg" alt="Witfontein Trail" width="100%">
-      <p><strong>What:</strong> A peaceful loop trail through fynbos and forest.</p>
-    </section>
-
-    <!-- Trail 3 -->
-    <section id="cradock-peak">
-      <h2>3. Cradock Peak</h2>
-      <img src="../images/cradock-peak.jpg" alt="Cradock Peak" width="100%">
-      <p><strong>What:</strong> A tough climb to George’s highest point with epic views.</p>
-    </section>
-
-    <!-- Trail 4 -->
-    <section id="groeneweide-trail">
-      <h2>4. Groeneweide Trail</h2>
-      <img src="../images/groeneweide-trail.jpg" alt="Groeneweide Trail" width="100%">
-      <p><strong>What:</strong> A shaded, flat trail ideal for birdwatching.</p>
-    </section>
-
-    <!-- Trail 5 -->
-    <section id="herolds-bay-cliff-path">
-      <h2>5. Herold’s Bay Cliff Path</h2>
-      <img src="../images/herolds-bay.jpg" alt="Herold's Bay Cliff" width="100%">
-      <p><strong>What:</strong> Scenic cliffside walk with ocean views and whale sightings.</p>
-    </section>
-
-    <!-- Trail 6 -->
-    <section id="map-of-africa-viewpoint-trail">
-      <h2>6. Map of Africa Viewpoint</h2>
-      <img src="../images/map-of-africa.jpg" alt="Map of Africa Viewpoint" width="100%">
-      <p><strong>What:</strong> Famous viewpoint shaped like Africa.</p>
-    </section>
-
-    <!-- Trail 7 -->
-    <section id="montagu-pass-hike">
-      <h2>7. Montagu Pass Hike</h2>
-      <img src="../images/montagu-pass.jpg" alt="Montagu Pass" width="100%">
-      <p><strong>What:</strong> A historic trail along a 19th-century pass.</p>
-    </section>
-
-    <!-- Trail 8 -->
-    <section id="fern-trail">
-      <h2>8. Fern Trail</h2>
-      <img src="../images/fern-trail.jpg" alt="Fern Trail" width="100%">
-      <p><strong>What:</strong> Green and shady forest path with ferns.</p>
-    </section>
-
-    <!-- Trail 9 -->
-    <section id="victoria-bay-walk">
-      <h2>9. Victoria Bay Walk</h2>
-      <img src="../images/victoria-bay.jpg" alt="Victoria Bay Walk" width="100%">
-      <p><strong>What:</strong> Coastal walk with tide pools and surfer views.</p>
-    </section>
-
-    <!-- Trail 10 -->
-    <section id="kaaimans-river-trail">
-      <h2>10. Kaaimans River Trail</h2>
-      <img src="../images/kaaimans-river.jpg" alt="Kaaimans River Trail" width="100%">
-      <p><strong>What:</strong> A peaceful trail by the river with falls and swim spots.</p>
-    </section>
-
-    <p><em>Tip: Pack water, wear good shoes, and respect nature. Replace these photos with your own for a personal touch!</em></p>
-
-   <section class="share">
-        <h3>📤 Share this Article</h3>
-        <a href="https://facebook.com/sharer/sharer.php?u=#" target="_blank">Facebook</a>
-        <a href="https://twitter.com/intent/tweet?url=#&text=Top Hiking Trails in George" target="_blank">Twitter</a>
-        <a href="https://wa.me/?text=#" target="_blank">WhatsApp</a>
-      </section>
-
-      <section class="related-posts">
-        <h3>Related Articles</h3>
-        <ul>
-          <li><a href="secret-george.html">Hidden Gems in George</a></li>
-          <li><a href="road-trip-itinerary.html">Garden Route Road Trip</a></li>
-        </ul>
-      </section>
-
-      <section class="newsletter">
-        <h3>📬 Stay in the Loop</h3>
-        <p>Sign up for updates, travel tips & new adventures!</p>
-        <form action="#">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
+    <!-- Article Header -->
+    <article class="article-header">
+      <div class="article-breadcrumb">
+        <a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / <span>Hiking Guides</span>
+      </div>
+      <h1 class="article-title">Top 10 Hiking Trails in and Around George</h1>
+      <p class="section-desc" style="margin-bottom: 1.25rem;">
+        George is a world-class outdoor hub. From coastal cliff walks to misty mountain summit climbs, explore our curated guide to finding your perfect Garden Route hike.
+      </p>
+      <div class="article-meta">
+        <span>📅 Garden Route Hiking Guide</span>
+        <span>•</span>
+        <span>🥾 10 Trails</span>
+        <span>•</span>
+        <span>⏱️ 8 Min Read</span>
+        <span>•</span>
+        <span>By Moeketsi Motloung</span>
+      </div>
     </article>
+
+    <!-- Trails Grid -->
+    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+
+      <!-- Trail 1 -->
+      <section id="outeniqua-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">1. Outeniqua Mountain Trail</h2>
+          <span class="card-badge" style="position: static;">Multi-Day • Moderate</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/outeniqua-trail.jpg" alt="Outeniqua Mountain Trail George" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> This iconic trail stretches through the rugged Outeniqua Mountain Range with views of ancient valleys, indigenous forest pockets, and rich fynbos floral kingdoms. While popular as a multi-day trek, several sections can be enjoyed as exhilarating day hikes.
+        </p>
+      </section>
+
+      <!-- Trail 2 -->
+      <section id="witfontein-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">2. Witfontein Forest Trail</h2>
+          <span class="card-badge" style="position: static; background: var(--primary-light);">Day Loop • Easy</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/witfontein-trail.jpg" alt="Witfontein Trail George" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> Situated just minutes from central George, Witfontein Nature Reserve features gentle shaded loop walks through towering pine plantations and lush native afro-montane forest. It is ideal for morning birdwatching, family strolls, and trail runners.
+        </p>
+      </section>
+
+      <!-- Trail 3 -->
+      <section id="cradock-peak" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">3. Cradock Peak</h2>
+          <span class="card-badge" style="position: static; background: #ea580c;">Summit • Challenging</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/cradock-peak.jpg" alt="Cradock Peak Climb George" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> The highest peak in the Outeniqua Range near George (1,578m). This strenuous day trek demands solid fitness and steady footing, but rewards you with breathtaking 360-degree vistas stretching from Mossel Bay to Knysna and deep into the semi-arid Karoo.
+        </p>
+      </section>
+
+      <!-- Trail 4 -->
+      <section id="groeneweide-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">4. Groeneweide Trail</h2>
+          <span class="card-badge" style="position: static; background: var(--primary-light);">Forest Walk • Moderate</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/groeneweide-trail.jpg" alt="Groeneweide Forest Trail" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> A shaded network of forest loops starting near Saasveld / Nelson Mandela University George Campus. Crystal-clear streams and dense canopy foliage make this one of the coolest hikes on warm summer days.
+        </p>
+      </section>
+
+      <!-- Trail 5 -->
+      <section id="herolds-bay-cliff-path" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">5. Herold’s Bay Cliff Path</h2>
+          <span class="card-badge" style="position: static; background: #0284c7;">Coastal • Easy/Moderate</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/herolds-bay.jpg" alt="Herold's Bay Cliff Path" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> A breathtaking coastal path hugging the rocky cliffs above Herold's Bay cove. During whale season (June to November), keep your eyes on the bay to spot Southern Right and Humpback whales breaching.
+        </p>
+      </section>
+
+      <!-- Trail 6 -->
+      <section id="map-of-africa-viewpoint-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">6. Map of Africa & Paraglide Launch</h2>
+          <span class="card-badge" style="position: static; background: var(--accent); color: #000;">Viewpoint • Easy</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/map-of-africa.jpg" alt="Map of Africa Viewpoint Wilderness" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> Located atop the Wilderness Heights ridge, the Kaaimans River meanders naturally around a hill to outline the geographic shape of the African continent. Nearby trails wind down to the river mouth.
+        </p>
+      </section>
+
+      <!-- Trail 7 -->
+      <section id="montagu-pass-hike" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">7. Montagu Pass Historic Hike</h2>
+          <span class="card-badge" style="position: static; background: #64748b;">Heritage • Moderate</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/montagu-pass.jpg" alt="Historic Montagu Pass" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> Walk along South Africa's oldest unaltered stone pass built by convicts in the 1840s. Dry-stone retaining walls, old toll houses, and dramatic gorge drops make this a hike rich in history.
+        </p>
+      </section>
+
+      <!-- Trail 8 -->
+      <section id="fern-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">8. Fern Forest Trail</h2>
+          <span class="card-badge" style="position: static; background: var(--primary-light);">Canopy Walk • Easy</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/fern-trail.jpg" alt="Fern Trail Forest" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> A serene walk surrounded by giant tree ferns, moss-covered boulders, and trickling streams. Perfect for nature photographers and peaceful forest bathing.
+        </p>
+      </section>
+
+      <!-- Trail 9 -->
+      <section id="victoria-bay-walk" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">9. Victoria Bay Coastal Walk</h2>
+          <span class="card-badge" style="position: static; background: #0284c7;">Ocean • Easy</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/victoria-bay.jpg" alt="Victoria Bay Garden Route" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> A picturesque stroll along the ocean pathway of Victoria Bay cove. Watch surfers carve world-class point waves while exploring natural rock pools and wave-carved caves.
+        </p>
+      </section>
+
+      <!-- Trail 10 -->
+      <section id="kaaimans-river-trail" class="pillar-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <h2 style="font-size: 1.6rem; color: var(--primary-dark); margin: 0;">10. Kaaimans River Trail & Falls</h2>
+          <span class="card-badge" style="position: static; background: #0d9488;">River • Moderate</span>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin: 1rem 0; box-shadow: var(--shadow-sm);">
+          <img src="../images/kaaimans-river.jpg" alt="Kaaimans River Trail" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+        <p style="color: var(--text-muted); line-height: 1.7;">
+          <strong>What it is:</strong> Combining riverside paths with kayak access, the Kaaimans trail leads into deep amber-colored canyon waters surrounded by towering vertical rock cliffs and hidden natural swim holes.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Related Articles -->
+    <div style="background: #f8fafc; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem; margin-top: 3.5rem;">
+      <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 1rem;">Explore Related Guides</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+        <a href="secret-george.html" class="pillar-card" style="padding: 1.25rem; display: block; margin: 0;">
+          <strong style="color: var(--primary-light); display: block; margin-bottom: 0.25rem;">🔍 Secret George</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">Hidden spots and lookouts known only to locals.</span>
+        </a>
+        <a href="what-to-pack.html" class="pillar-card" style="padding: 1.25rem; display: block; margin: 0;">
+          <strong style="color: var(--primary-light); display: block; margin-bottom: 0.25rem;">🎒 What to Pack</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">Gear checklists and weather preparation for Garden Route trails.</span>
+        </a>
+        <a href="road-trip-itinerary.html" class="pillar-card" style="padding: 1.25rem; display: block; margin: 0;">
+          <strong style="color: var(--primary-light); display: block; margin-bottom: 0.25rem;">🚗 Road Trip Itinerary</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">7-day driving journey across the southern cape.</span>
+        </a>
+      </div>
+    </div>
 
   </main>
 
+  <!-- Modern Footer -->
   <footer>
-    <p>&copy; 2025 Rooi Venture</p>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Rooi Venture</h2>
+          <p>
+            Your trusted companion for uncovering the best hikes, scenic drives, and hidden wilderness experiences along South Africa's Garden Route.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Moeketsi</a></li>
+            <li><a href="../blog.html">Blog & Guides</a></li>
+            <li><a href="../index.html#map-section">Interactive Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Trails</h4>
+          <ul class="footer-links">
+            <li><a href="top-hiking-trails.html#outeniqua-trail">Outeniqua Trail</a></li>
+            <li><a href="top-hiking-trails.html#cradock-peak">Cradock Peak</a></li>
+            <li><a href="top-hiking-trails.html#witfontein-trail">Witfontein Trail</a></li>
+            <li><a href="garden-route-trips.html">Kaaimans Gorge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li>📍 George, Western Cape, SA</li>
+            <li>✉️ <a href="mailto:rooiventure@hotmail.com">rooiventure@hotmail.com</a></li>
+            <li><a href="../contact.html">Send an Inquiry →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rooi Venture. Crafted with passion for the Garden Route.</p>
+        <p>Created by Moeketsi Isaac Rooi Motloung</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>
