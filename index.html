@@ -378,26 +378,146 @@
   <script>
     // Leaflet Interactive Map Initialization
     document.addEventListener("DOMContentLoaded", function () {
-      const map = L.map('map-container').setView([-33.9646, 22.4590], 10);
+      const map = L.map('map-container').setView([-33.9900, 22.8000], 9);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      // CartoDB Voyager (Never blocked on file:/// or localhost, rich colors for adventure/tourism)
+      const voyagerLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
       }).addTo(map);
 
+      // ESRI Satellite Layer (Alternate option)
+      const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: '&copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 18
+      });
+
+      // Layer Control (Switcher between Topo/Adventure and Satellite)
+      L.control.layers({
+        "🌿 Adventure Map": voyagerLayer,
+        "🛰️ Satellite View": satelliteLayer
+      }, null, { position: 'topright' }).addTo(map);
+
+      // Custom Pin Marker Generator
+      function createPin(color, icon) {
+        return L.divIcon({
+          className: 'custom-map-pin',
+          html: `<div style="
+            background: ${color};
+            width: 32px;
+            height: 32px;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 2px solid #ffffff;
+            cursor: pointer;
+          ">
+            <span style="transform: rotate(45deg); font-size: 14px;">${icon}</span>
+          </div>`,
+          iconSize: [32, 32],
+          iconAnchor: [16, 32],
+          popupAnchor: [0, -32]
+        });
+      }
+
       const locations = [
-        { name: 'George (Adventure Hub)', coords: [-33.9646, 22.4590], desc: 'Gateway to Outeniqua passes and trails' },
-        { name: 'Wilderness Lagoon & Beach', coords: [-33.9845, 22.4573], desc: 'Canoeing, pristine beaches & Touw River' },
-        { name: 'Kaaimans River Gorge', coords: [-33.9912, 22.5534], desc: 'Stunning canyon, kayak rentals & secret waterfalls' },
-        { name: 'Herold’s Bay', coords: [-34.0538, 22.3965], desc: 'Sheltered cove and coastal cliff walking path' },
-        { name: 'Victoria Bay', coords: [-34.0041, 22.5489], desc: 'World-famous surfing cove & tidal pools' },
-        { name: 'Knysna Heads & Lagoon', coords: [-34.0494, 23.0588], desc: 'Scenic clifftop viewpoints and tranquil lagoon' },
-        { name: 'Tsitsikamma National Park', coords: [-33.9327, 23.8782], desc: 'Suspension bridges and ancient marine reserves' }
+        { 
+          name: 'George Central', 
+          category: 'Adventure Hub', 
+          color: '#0d9488', 
+          icon: '🌲', 
+          coords: [-33.9646, 22.4590], 
+          desc: 'Basecamp for Outeniqua passes, forest trails, and local history.',
+          link: 'blog/must-visit-attractions.html'
+        },
+        { 
+          name: 'Cradock & Outeniqua Peaks', 
+          category: 'Forest & Mountain Peak', 
+          color: '#ea580c', 
+          icon: '⛰️', 
+          coords: [-33.9167, 22.4833], 
+          desc: '1,578m summit climb above the clouds with 360° ocean views.',
+          link: 'blog/top-hiking-trails.html#cradock-peak'
+        },
+        { 
+          name: 'Witfontein Forest Reserve', 
+          category: 'Forest & Mountain Peak', 
+          color: '#0d9488', 
+          icon: '🌿', 
+          coords: [-33.9350, 22.4400], 
+          desc: 'Tranquil shaded canopy paths, birdwatching, and pine groves.',
+          link: 'blog/top-hiking-trails.html#witfontein-trail'
+        },
+        { 
+          name: 'Kaaimans River Gorge', 
+          category: 'Forest & Mountain Peak', 
+          color: '#ea580c', 
+          icon: '🛶', 
+          coords: [-33.9912, 22.5534], 
+          desc: 'Deep amber canyon waters, secret waterfalls & kayak adventures.',
+          link: 'blog/garden-route-trips.html'
+        },
+        { 
+          name: 'Wilderness Lagoon & Beach', 
+          category: 'Coastal Escape', 
+          color: '#f59e0b', 
+          icon: '🌊', 
+          coords: [-33.9920, 22.5800], 
+          desc: 'Endless golden beaches, canoe trails & paragliding launches.',
+          link: 'blog/garden-route-trips.html'
+        },
+        { 
+          name: 'Victoria Bay', 
+          category: 'Coastal Escape', 
+          color: '#f59e0b', 
+          icon: '🏄', 
+          coords: [-34.0041, 22.5489], 
+          desc: 'World-renowned surfing cove, tidal rock pools & ocean strolls.',
+          link: 'blog/top-hiking-trails.html#victoria-bay-walk'
+        },
+        { 
+          name: 'Herold’s Bay & Cliff Path', 
+          category: 'Coastal Escape', 
+          color: '#f59e0b', 
+          icon: '🏖️', 
+          coords: [-34.0538, 22.3965], 
+          desc: 'Sheltered cove beach and coastal cliff path with whale watching.',
+          link: 'blog/top-hiking-trails.html#herolds-bay-cliff-path'
+        },
+        { 
+          name: 'Knysna Heads & Lagoon', 
+          category: 'Coastal Escape', 
+          color: '#f59e0b', 
+          icon: '⛵', 
+          coords: [-34.0494, 23.0588], 
+          desc: 'Dramatic sandstone sea cliffs, lagoon cruises & fresh oysters.',
+          link: 'blog/garden-route-trips.html'
+        },
+        { 
+          name: 'Tsitsikamma National Park', 
+          category: 'Forest & Mountain Peak', 
+          color: '#ea580c', 
+          icon: '🌉', 
+          coords: [-34.0200, 23.9000], 
+          desc: 'Iconic Storms River suspension bridge and marine reserve.',
+          link: 'blog/road-trip-itinerary.html#day7'
+        }
       ];
 
       locations.forEach(loc => {
-        L.marker(loc.coords)
-          .addTo(map)
-          .bindPopup(`<strong>${loc.name}</strong><br><span style="font-size:0.85rem; color:#555;">${loc.desc}</span>`);
+        const marker = L.marker(loc.coords, { icon: createPin(loc.color, loc.icon) }).addTo(map);
+        marker.bindPopup(`
+          <div style="font-family: inherit; min-width: 190px; padding: 4px 2px;">
+            <strong style="font-size: 1rem; color: #134e4a; display: block; margin-bottom: 2px;">${loc.name}</strong>
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: ${loc.color}; display: block; margin-bottom: 6px;">${loc.category}</span>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0 0 10px 0; line-height: 1.4;">${loc.desc}</p>
+            <a href="${loc.link}" style="font-size: 0.82rem; font-weight: 700; color: #0d9488; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">Explore Guide →</a>
+          </div>
+        `);
       });
 
       // Mobile Menu Toggle
